@@ -1,0 +1,26 @@
+div.inline { float:left; }
+
+.child {
+    width: 300px;
+    height: 300px;
+    background-color: bisque;
+    margin: 10px;
+    padding: 5px;
+}
+
+.parent {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    background-color:aqua;
+    margin: 10px;
+}
+
+.sibling {
+    padding: 5px;
+    width: 300px;
+    height: 300px;
+    background-color:cadetblue;
+    margin: 10px;
+}
+

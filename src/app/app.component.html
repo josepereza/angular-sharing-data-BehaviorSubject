@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="parent inline">
+    <h3>parent</h3>
+    <button (click)="onclick()">send 2 child</button>
+    <p>message from childe <strong>{{ messagefromChild}}</strong></p>
+    <hr>
+    <p> message from child by viewchild <strong> {{messageViewInit}}</strong></p>
+    <hr>
+    <p> BehaviorSubject massage <strong> {{dataMessage}}</strong> </p>
+  </div>
+
+  <div class="child inline">
+    <h3>child</h3>
+    <app-child [childMessage]="parentMessage" (messageEvent)="reciveMessage($event)"></app-child>
+  </div>
+
+  <div class="sibling inline">
+    <h3>sibling</h3>
+    <app-sibling></app-sibling>
+  </div>
+</div>
